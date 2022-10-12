@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi Dengan Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <i class="fas fa-paper-plane"></i>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Masukkan nama" id="kontak-nama" onkeyup="validasiNama()">
+      </div>
+
+      <div class="submitError">
+        <span id="nama-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Alamat</label>
+        <input type="text" placeholder="Masukan alamat " id="kontak-alamat" onkeyup="validasiAlamat()">
+      </div>
+
+      <div class="submitError">
+        <span id="alamat-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="Masukan No. Telp " id="kontak-notelp" onkeyup="validasiNotelp()">
+      </div>
+
+      <div class="submitError">
+        <span id="tel-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Masukkan Email" id="kontak-email" onkeyup="validasiEmail()">
+      </div>   
+
+      <div class="submitError">
+        <span id="email-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Kombinasi huruf ataupun angka" id="kontak-pass" onkeyup="validasiPass()">
+      </div>   
+
+      <div class="submitError">
+        <span id="pass-error"></span>
+      </div>
+
+      <button onclick="return validasiForm()">Submit</button>
+      <span id="submit-error"  style="color: red;"></span>
+  </form>
+  
+  </div>
+   
+  <script src="script.js"></script>
+</body>
+</html>
